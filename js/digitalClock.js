@@ -57,10 +57,10 @@ $(document).ready(function(){
 	}
 
 	function counterHandler(){
-		if(minuteCounter < 60 ){
-			minuteCounter++;
+		if(secondCounter < 60 ){
+			secondCounter++;
 		}else{
-			minuteCounter = 0;
+			secondCounter = 0;
 		}
 	}
 
