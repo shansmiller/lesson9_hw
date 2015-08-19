@@ -6,31 +6,35 @@
 
 #clock{
 	display:none;
-	font-size: 120px;
+	font-size: 70px;
 	font-family: digital-7;
 	color:#24FF00;
-	width: 500px;
-	height: 250px;
+	width: auto;
+	height: auto;
 	text-align:center;
 	border-radius:30px;
 	padding-top:50px;
 	padding-bottom:50px;
-	padding:150px;
-	float: auto;
+	float:center;
+	position: relative;
+
+
 }
 
 #startGame{
 	background:black;
-	font-size:120px;
+	font-size:70px;
 	font-family: digital-7;
 	color:#24FF00;
-	width: 500px;
-	height: 250px;
+	border: 2px;
+	border-top-color: gray;
+	width: auto;
+	height: auto;
 	text-align:center;
 	border-radius:30px;
 	padding-top:50px;
 	padding-bottom:50px;
-	float: auto;
-
+	float: center;
+	position: relative;
 	cursor:pointer;
 }

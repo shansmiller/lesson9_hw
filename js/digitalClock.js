@@ -8,6 +8,7 @@ $(document).ready(function(){
 	var timer;
 	var cd; //COUNTDOWN INTERVAL
 	var secondCounter = 0;
+	var minuteCounter = 0;
 
 	$("#startGame").click(function(){
 		startCountDown();
@@ -56,20 +57,20 @@ $(document).ready(function(){
 	}
 
 	function counterHandler(){
-		if(secondCounter < 60 ){
-			secondCounter++;
+		if(minuteCounter < 60 ){
+			minuteCounter++;
 		}else{
-			secondCounter = 0;
+			minuteCounter = 0;
 		}
 	}
 
 	function handleUIUX(){
-		if( secondCounter %2 ===0){
+		if( minuteCounter %2 ===0){
 			$("#clock").css( 'background', 'black' );
 			$("#clock").css( 'color', '#24FF00' );
-			console.log ( secondCounter + "it's even" );
+			console.log ( minuteCounter + "it's even" );
 		}else{
-			console.log( secondCounter + "it's odd" );
+			console.log( minuteCounter + "it's odd" );
 			$("#clock").css( 'background', '#24FF00' );
 			$("#clock").css( 'color', 'black' );
 		}
