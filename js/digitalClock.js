@@ -29,7 +29,8 @@ $(document).ready(function(){
 			startTimer();
 			hideStart();
 			showClock();
-		}, 4000);
+			hideStart();
+		}, 3000);
 
 	}
 
@@ -55,22 +56,23 @@ $(document).ready(function(){
 		handleUIUX();
 		}, 1000 );
 	}
+	setTimeout(handleUIUX, 60000);
 
 	function counterHandler(){
-		if(secondCounter < 60 ){
-			secondCounter++;
+		if(m < 60 ){
+			minuteCounter++;
 		}else{
-			secondCounter = 0;
+			minuteCounter = 0;
 		}
 	}
 
 	function handleUIUX(){
-		if( minuteCounter %2 ===0){
+		if( m % 2 === 0){
 			$("#clock").css( 'background', 'black' );
 			$("#clock").css( 'color', '#24FF00' );
-			console.log ( minuteCounter + "it's even" );
+			console.log ( m + "it's even" );
 		}else{
-			console.log( minuteCounter + "it's odd" );
+			console.log( m + "it's odd" );
 			$("#clock").css( 'background', '#24FF00' );
 			$("#clock").css( 'color', 'black' );
 		}
