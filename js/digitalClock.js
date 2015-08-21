@@ -10,6 +10,7 @@ $(document).ready(function(){
 	var secondCounter = 0;
 	var minuteCounter = 0;
 
+
 	$("#startGame").click(function(){
 		startCountDown();
 	});
@@ -99,4 +100,12 @@ $(document).ready(function(){
 		}
 		return num;
 	}
+
+		 $(".circle").hover(function(){
+		  $(this).css("width","70px")
+		  
+		 },function(){
+		 	$(this).css("width","60px")
+		 })
+
 });

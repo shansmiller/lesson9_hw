@@ -14,13 +14,14 @@
 	height: auto;
 	text-align:center;
 	border-radius:30px;
-	padding-top:50px;
-	padding-bottom:50px;
-	float:center;
-	position: relative;
-	margin: 0 auto;
 	border: 10px solid gray;
-	margin-top: 125px;
+	/*padding-top:50px;*/
+	/*padding-bottom:50px;*/
+	/*float:center;*/
+	/*position: relative;*/
+	/*margin: 0 auto;*/
+	
+	/*margin-top: 125px;*/
 
 
 }
@@ -35,22 +36,41 @@
 	height: auto;
 	text-align:center;
 	border-radius:30px;
-	padding-top: 50px;
-	padding-bottom:50px;
-	float: center;
-	position: relative;
 	cursor:pointer;
-	margin: 0 auto;
-	margin-top: 125px;
+
 }
 
 #table img{
 	height:400px;
-	text-align:center;
-	float: center;
-	position: relative;
-	margin: 0 auto;
 }
+
+#tableWithClock{
+	/*padding-top: 120px;*/
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin: 0 auto;
+	border: solid 0px;
+	width:323px;
+	height:463px;
+
+}
+#socialIcons {
+	width: 60px;
+	padding-left: 50px;
+	padding-top: 50px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	
+}
+
+.circle{
+	filter: blur(5px);
+}
+
 
 body{ background: lightblue;
 }

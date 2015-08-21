@@ -1,0 +1,27 @@
+body{ background: orange;}
+
+/* for large desktop */
+@media(min-width: 1200px){
+	body{ background: yellow;}
+}
+
+/* for laptop */
+@media(min-width: 768px) and (max-width: 979px){
+	body{ background: pink;}
+}
+
+/* for tablet */
+@media(max-width: 767px){
+	body{ background: green;}
+}
+
+/* for phone */
+@media(max-width: 480px){
+	body{ background: black;}
+}
+
+
+
+
+
+
